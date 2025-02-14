@@ -73,3 +73,34 @@ variable "database_subnet_cidr" {
 variable "database_subnet_tags" {
   default = {}
 }
+
+//---------- NAT Gateway variables ----------------------------------------
+variable "nat_gateway_tags" {
+    type = map   
+    default = {}  
+}
+//---------- Route table variables ----------------------------------------
+variable "public_route_table_tags" {
+    type = map   
+    default = {}  
+}
+variable "private_route_table_tags" {
+    type = map   
+    default = {}  
+}
+variable "database_route_table_tags" {
+    type = map   
+    default = {}  
+}
+//----------VPC Peering variables ----------------------------------------
+
+variable "is_peering_required" {
+  type = bool
+  default = false  
+}
+
+variable "vpc_peering_tags" {
+    type = map   
+    default = {}  
+}
+
